@@ -63,7 +63,7 @@ li{
 }
 li:hover{
     border-bottom: 1px solid rgb(237, 44, 73);
-    transition: transform 0.3s ease 0s;
+    transition-timing-function: ease-in;
 }
 .topnav .active{
     border-right: 1px solid rgb(219, 229, 230);
@@ -83,7 +83,19 @@ li:hover{
     align-items: center;
     text-decoration: none;
     padding-top: 5px;
+    
+    
 }
+
+.mobile-container{
+    display:none;
+
+
+    
+ }
+ .mobile-container a{
+    width:10px;
+ }
 section{
     display: flex;
     background-image: url(./images/pattern-bracket.svg);
@@ -401,3 +413,52 @@ footer{
     gap: 15px;
     
 }
+@media screen and (max-width:750px) {
+
+    
+    .topnav{
+        display: none;
+    }
+    .mobile-container{
+        display: block;
+    }
+    section{
+       text-align: center;
+       flex-direction: column;
+       margin: 5rem;
+    overflow: hidden;
+
+        
+    }
+    .seconds{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .login{
+        justify-content: center;
+    }
+    .adiv{
+        flex-direction: column;
+    }
+    .floating-div{
+        position: absolute;
+        top: 265%;
+        padding: 5em;
+    }
+    .choose,.choose2,.choose3,.choose4{
+        padding-top: 15px;
+    }
+    .h2div{
+        padding-bottom: 2px;
+        padding-top: 10px;
+    }
+    .bigdiv{
+        flex-direction: column;
+        width: 100%;
+    }
+    .second-big-div{
+        flex-direction: column;
+        width: 100%;
+    }
+    }
+
